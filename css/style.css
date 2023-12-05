@@ -1,0 +1,320 @@
+:root{
+    --primary-f:'Montserrat', sans-serif;
+    --secondary-f:'Poppins', sans-serif;
+    --background-col:#F7F7F7;
+}
+.colorGray{
+    color: #748182;
+}
+p,span,button,a,div{
+    font-family: var(--secondary-f) !important;
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 2;
+    height: 100vh;
+}
+header{  
+    color: #fff !important;
+}
+h1,h2,h3,h3,h4,h5,h6,.navlogo{
+    font-family: var(--primary-f) !important;   
+    font-weight:800 !important;
+}
+nav .container ul a, .active{
+    color: #fff !important;
+    font-family:var(--secondary-f) !important;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 20px;
+}
+.navlogo {
+    font-size:18px;
+    line-height:26px;
+    color: #fff !important;
+}
+nav .container ul li {
+    position: relative;
+    overflow: hidden;
+  }
+nav .container ul li .active::after{
+  content: '';
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 8px;
+  background-color: #fff;
+}
+
+#home {
+    background-image: url('..\\imgs\\bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.middle{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.middle .icons a{
+    padding-inline: 5px;
+    color: #fff;
+}
+#about .progress{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#about .btnhover{
+    color: #eee ;
+    background-color: #000 ;
+}
+#about .btnhover:hover{
+    background: transparent;
+    color: #343434;
+    border: 1px solid #000;
+}
+ .btnhover2 {
+    border: 1px solid #000;
+    border: 50%;
+}
+ .btnhover2:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#about .hero::after{
+    background-image: url('..\\imgs\\dots.png');
+    background-repeat: repeat;
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -30px;
+    bottom: -8%;
+    z-index: -1;
+}
+#services{
+    margin-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--background-col);
+}
+
+ .header{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+ .header h1{
+    color: #343434;
+    position: relative;
+    z-index: 3;
+}
+ .header .dots{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    background-image: url("../imgs/dots.png");
+    background-size: auto;
+    background-repeat: repeat;
+    top: 40%;
+    left: 0px;
+}
+#services  .box {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  #services p{
+   line-height: 1.6;
+  }
+  #services .box .icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+  }
+  #services  .box:hover .icon{
+    color: #fff;
+    background-color: #000;
+    transition: all 0.5s;
+  } 
+  #services .box i{
+    font-size: 28px;
+  }
+  #portfolio {
+    margin-top: 70px;
+    padding-bottom: 70px;
+    background-color: #fff;
+  }
+  #portfolio  .nav-link,#portfolio  .nav-pills .nav-link.active{
+    color: #000 !important;
+    background-color: #fff !important;
+    font-weight: 700 !important;
+}
+#portfolio  .image{
+    position: relative;  
+    overflow: hidden;
+}
+#portfolio .imglayer {
+    content: '';
+    position: absolute;
+    width: 94%;
+    height: 93%;
+    top: 10px;
+    left: 10px;   
+    background-color: #fff;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(20px);   
+}
+#portfolio  .image:hover .imglayer{
+    opacity: 1;
+    transform: translateY(0);
+}
+#portfolio .image .imglayer .imgcaption h6
+{
+color: #000;
+}
+#portfolio .image .imglayer .imgcaption h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    transform: translateY(-15px);
+    transition: all 0.5s;
+}
+#portfolio  .image .imglayer:hover h6,
+#portfolio  .image .imglayer:hover i{
+    transform: translateY(0);
+}
+#portfolio i{
+    color: #fff;
+    
+}
+#portfolio .icons .icon {
+background-color: #000;
+}
+#portfolio .icons .icon:hover {
+  background-color: #fff;
+border: 1px solid #000;
+}
+#portfolio .icons .icon:hover i{
+    color: #000;
+}
+
+#testimnoials {
+    padding-block:30px ;
+    background-color: var(--background-col);
+    padding: 128px 0;
+}
+#testimnoials img{
+    border-radius: 50%;
+  }
+  #testimnoials   p{
+    word-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  #team{
+    padding-block:30px ;
+    background-color: var(--background-col);
+  }
+  #team .card{
+  border-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  }
+  #team .card-body{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  #team .card-body{
+  background-color: #5B5B5B;
+  }
+
+  #team .card {
+    position: relative;
+  }
+  #team img{
+    transition: all 0.4s;
+  }
+  #team .imgLayer {
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 40%; 
+    top: 25%;
+    left: 13%; 
+    transition: all .4s; 
+    opacity: 0;
+    overflow: hidden; 
+  }
+   #team .card:hover .imgLayer{
+    opacity: 1;
+     width: 96%;
+     height: 79%;
+     top: 5px;
+     left: 10px;
+     transform: rotateY(360deg);
+  } 
+  #team .card:hover #imgScale {
+     transform: scale(1.1);
+  }
+  #team i{
+    color: #fff;   
+}
+#team .icons .icon {
+background-color: #000;
+}
+#team .icons .icon:hover {
+    background-color: #fff;
+  border: 1px solid #000;
+  }
+  #team .icons .icon:hover i{
+      color: #000;
+  }
+  #contact{
+    padding: 100px 0;
+  }
+  #contact  .contactIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:  #f4f4f4;
+  }
+  #contact  .contactHov:hover .contactIcon{
+  background-color: #000;
+  }
+
+  #contact  .contactHov:hover .contactIcon i{
+    color: #fff;
+  }
+  #contact .contactform{
+    /* background-color: brown; */
+    width: 80%;
+    margin: 30px auto;
+}
+#contact .contactform textarea{
+    margin-top: 10px;
+    background-color: #F4F4F4;
+    border: none;
+}
+#contact .contactform input{
+    border: none;
+    background-color: #F4F4F4;
+}
+
