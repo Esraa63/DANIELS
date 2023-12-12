@@ -253,6 +253,7 @@ border: 1px solid #000;
   }
   #team img{
     transition: all 0.4s;
+    
   }
   #team .imgLayer {
     background-color: #fff;
@@ -262,9 +263,8 @@ border: 1px solid #000;
     height: 40%; 
     top: 25%;
     left: 13%; 
-    transition: all .4s; 
     opacity: 0;
-    overflow: hidden; 
+    transition: all .4s; 
   }
    #team .card:hover .imgLayer{
     opacity: 1;
@@ -320,4 +320,56 @@ background-color: #000;
     border: none;
     background-color: #F4F4F4;
 }
+@media screen and (max-width:775px) {
+  #team .card:hover .imgLayer{
+    opacity: 1;
+     width: 96%;
+     height: 79.5%;
+     top: 5px;
+     left: 10px;
+     transform: rotateY(360deg);
+  } 
+}
+@media screen and (min-width:775px) and (max-width:992px){
+  #team .card:hover .imgLayer{
+    opacity: 1;
+     width: 96%;
+     height: 69%;
+     top: 4px;
+     left: 5px;
+     transform: rotateY(360deg);
+  } 
+  #portfolio .imglayer {
+    content: '';
+    position: absolute;
+    width: 94%;
+    height: 93%;
+    top: 10px;
+    left: 9px;   
+    background-color: #fff;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(20px);   
+}
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+  #team .card:hover .imgLayer{
+    opacity: 1;
+     width: 96%;
+     height: 79%;
+     top: 5px;
+     left: 8px;
+     transform: rotateY(360deg);
+  } 
+}
 
+@media screen and (min-width:1200px)and (max-width:1400px){
+  #team .card:hover .imgLayer{
+    opacity: 1;
+     width: 96%;
+     height: 75%;
+     top: 5px;
+     left: 8px;
+     transform: rotateY(360deg);
+  } 
+}
